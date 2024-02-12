@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Dodecagon Dilemma</title>
+        <link rel="stylesheet" href="./src/master.css">
+    </head>
+
+
+    <body>
+        <div class="container">
+            <div class="column">
+                <canvas width="600" height="450"></canvas>
+
+                <p id="mode">Rotate</p>
+                <button id="swap">Swap</button>
+                <button id="rotate">Rotate</button>
+                <button id="undo">Undo (NYI)</button>
+                <button id="solve">Solve</button>
+            </div>
+
+            <div class="column">
+                <h2>Brute Force Method</h2>
+                <p>
+                    <p>
+                        Positions: <br>
+                        [0 1 2  3 ] <br>
+                        [4 5 6  7 ] <br>
+                        [8 9 10 11] <br>
+                    </p>
+                        
+
+                    Maintain a list of the letters of the wheels, and their locations <br><br>
+
+                    1. Place the first (A) wheel in the top left corner. <br>
+                    2. Place the second wheel in the position after that. <br>
+                    3. Rotate the second wheel until it aligns with all the wheels already placed <br>
+                    4. If a full rotation does not reach a configuration where the 
+                        wheel fits, then try the next wheel in the list of wheels. <br>
+                    4. Repeat step 2 <br>
+                    5. After all the wheels have been placed 
+                </p>
+            </div>
+        </div>
+            
+        <script src="./src/Wheel.js"></script>
+        <script src="./src/WheelGrid.js"></script>
+        <script src="./src/main.js"></script>
+
+
+    
+    </body>
+
+
+</html>
